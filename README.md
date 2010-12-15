@@ -49,13 +49,13 @@ into PostgreSQL.  So, for example:
 The More You Know
 -----------------
 
-All BOOLs are remapped to INTEGERs on their way to PostgreSQL.
+All `BOOL`s are remapped to `INTEGER`s on their way to PostgreSQL.
 Boolean values come out of Access as {0,1} which PostgreSQL
 doesn't accept.  A possible future solution would be to add a
 flag to mdb-export that allows us to specify how to represent
 booleans in the SQL INSERT style of dump.
 
-This script inserts everything to a "source" schema.  In my
+This script inserts everything to a `source` schema.  In my
 little world there is always a next step of ETL, and this
 gives me a nice baseline of the source data mostly as it was
 in Access.  The next step then can consist of a set of nice
@@ -65,9 +65,6 @@ original Access data is no longer needed, I can drop it all
 easily with
 
     DROP SCHEMA source CASCADE
-
-The script will escape backslashes, since it is unlikely that
-PostgreSQL escape codes were intended in source Access data.
 
 For speed and accuracy, each table is inserted in its own
 transaction with an exclusive lock over the table.  The
