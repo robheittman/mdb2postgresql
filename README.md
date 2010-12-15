@@ -9,7 +9,7 @@ This is the script I use to hop from Access to PostgreSQL, relying
 on mdbtools.  The most recent official master of mdbtools can be
 found on github at:
 
-    https://github.com/brianb/mdbtools
+[https://github.com/brianb/mdbtools](https://github.com/brianb/mdbtools)
 
 
 OS X Stuff
