@@ -19,7 +19,7 @@ Since I carry a MacBook Pro, I need it to work on OS X too, and
 for that I use a combination of MacPorts and a recent build of
 mdbtools twiddled for OS X, which lives here:
 
-    https://github.com/rfc2616/mdbtools
+[https://github.com/rfc2616/mdbtools](https://github.com/rfc2616/mdbtools)
 
 (It would be nice to get the relevant patches into mdbtools master
 and update MacPorts to use it; help?)
@@ -76,9 +76,9 @@ any one row.
 
 The script doesn't attempt to deal with backslashes, which can
 be a known cause of table exports failing.  I think the best
-solution for this is to enable standard_conforming_strings=on
+solution for this is to enable `standard_conforming_strings=on`
 in your postgresql.conf; there is motion afoot to make
-standard_conforming_strings=on the default in PostgreSQL 9.1
+`standard_conforming_strings=on` the default in PostgreSQL 9.1
 and later in any case.  See:
 
-    http://wiki.postgresql.org/wiki/Standard_conforming_strings
+[http://wiki.postgresql.org/wiki/Standard_conforming_strings](http://wiki.postgresql.org/wiki/Standard_conforming_strings]
