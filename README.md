@@ -81,4 +81,4 @@ in your postgresql.conf; there is motion afoot to make
 `standard_conforming_strings=on` the default in PostgreSQL 9.1
 and later in any case.  See:
 
-[http://wiki.postgresql.org/wiki/Standard_conforming_strings](http://wiki.postgresql.org/wiki/Standard_conforming_strings]
+[http://wiki.postgresql.org/wiki/Standard_conforming_strings](http://wiki.postgresql.org/wiki/Standard_conforming_strings)
