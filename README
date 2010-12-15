@@ -74,3 +74,11 @@ transaction with an exclusive lock over the table.  The
 entire table will fail if an error occurs in the import of
 any one row.
 
+The script doesn't attempt to deal with backslashes, which can
+be a known cause of table exports failing.  I think the best
+solution for this is to enable standard_conforming_strings=on
+in your postgresql.conf; there is motion afoot to make
+standard_conforming_strings=on the default in PostgreSQL 9.1
+and later in any case.  See:
+
+    http://wiki.postgresql.org/wiki/Standard_conforming_strings
